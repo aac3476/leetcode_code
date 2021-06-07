@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func maxProfit(prices []int) int {
+func maxProfit_121(prices []int) int {
 	if len(prices) < 2 {
 		return 0
 	}
@@ -23,5 +23,5 @@ func maxProfit(prices []int) int {
 func main() {
 	var arr = []int{7,6,4,3,1}
 
-	fmt.Println(maxProfit(arr))
+	fmt.Println(maxProfit_121(arr))
 }

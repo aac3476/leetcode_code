@@ -18,7 +18,7 @@ func calc (prices []int) int{
 	return max
 }
 
-func maxProfit(prices []int) int {
+func maxProfit_123(prices []int) int {
 	max := 0
 	for i:=0;i<len(prices);i++ {
 		pointPorfit := calc(prices[:i]) + calc(prices[i:])
@@ -34,11 +34,11 @@ func maxProfit(prices []int) int {
 
 func main() {
 	var arr = []int{1,2,4,2,5,7,2,4,9,0}
-	fmt.Println(maxProfit(arr))
+	fmt.Println(maxProfit_123(arr))
 	arr = []int{3,3,5,0,0,3,1,4}
-	fmt.Println(maxProfit(arr))
+	fmt.Println(maxProfit_123(arr))
 	arr = []int{1,2,3,4,5}
-	fmt.Println(maxProfit(arr))
+	fmt.Println(maxProfit_123(arr))
 	arr = []int{7,6,4,3,1}
-	fmt.Println(maxProfit(arr))
+	fmt.Println(maxProfit_123(arr))
 }

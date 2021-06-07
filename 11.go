@@ -22,13 +22,7 @@ func maxArea(height []int) int {
 	return max
 }
 
-func min(a int,b int) int{
-	if a>b {
-		return b
-	} else {
-		return a
-	}
-}
+
 
 
 func main() {
